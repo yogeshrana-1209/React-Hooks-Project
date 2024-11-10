@@ -17,7 +17,7 @@ function App() {
     if(counter >= 15)
     {
       alert('You have not set Value above 15, ' + ' Values range is from 1 to 15');
-      setCounter(counter = 0);
+      setCounter(counter = 5);
     }
     else
     {
@@ -35,7 +35,7 @@ function App() {
     if(counter <= 0)
       {
         alert('You have not set Negative Values');
-        setCounter(counter = 0);
+        setCounter(counter = 5);
       }
       else
       {
@@ -47,7 +47,7 @@ function App() {
   return (
     <>
      <h1>React Hooks Project</h1>
-     <h2>Counter Value : {counter}</h2>
+     <h2 className='pt-5 pb-5'>Counter Value : {counter}</h2>
 
      <button
      onClick={addValue}
@@ -55,8 +55,8 @@ function App() {
      <button
      onClick={removeValue}
      >Remove value {counter}</button>
-     <p>Footer : {counter}</p>
-     <footer>Developed by : Yogesh Rana (Full Stack Developer)</footer>
+     <p className='pb-10 pt-5'>Footer : {counter}</p>
+     <footer className='pt-5 pb-5'>Developed by : Yogesh Rana (Full Stack Developer)</footer>
     </>
   )
 }
